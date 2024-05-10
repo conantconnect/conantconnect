@@ -49,7 +49,7 @@ export default function OneMentor() {
     .then(function(response) {
         storeData(JSON.stringify(response.data.user))
         console.log("connection sent")
-        navigate("/conantconnect/explore")
+        navigate("/explore")
 
     }).catch(function (err) {
         console.log(err.message);
@@ -137,8 +137,9 @@ export default function OneMentor() {
                               <p className='standard_paragraph'>*This mentor is already your friend</p>
                             </div>:
                             <div>
-                              <a className='goBackFixed' href={"/conantconnect/explore"}>🔙</a>
+                              {/* <a className='goBackFixed' href={"/conantconnect/explore"}>🔙</a> */}
                               <button className='basic_button' onClick={()=>sendRequest()}>SEND CONNECTION REQUEST</button>
+                              <button className='basic_button' onClick={()=>navigate("/conantconnect/explore")}>BACK TO EXPLORE</button>
                             </div>
                           }
                         </div>
