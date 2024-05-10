@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/conantconnect/home/static/css/main.4d0c3df2.css",
-    "main.js": "/conantconnect/home/static/js/main.fd32a808.js",
+    "main.js": "/conantconnect/home/static/js/main.42ba3c16.js",
     "static/js/787.2a1fce72.chunk.js": "/conantconnect/home/static/js/787.2a1fce72.chunk.js",
     "static/media/main_bg.jpeg": "/conantconnect/home/static/media/main_bg.5881f9e37cf7f543853a.jpeg",
     "static/media/logo.png": "/conantconnect/home/static/media/logo.9c298973f956d4e3e299.png",
     "static/media/logo.svg": "/conantconnect/home/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/conantconnect/home/index.html",
     "main.4d0c3df2.css.map": "/conantconnect/home/static/css/main.4d0c3df2.css.map",
-    "main.fd32a808.js.map": "/conantconnect/home/static/js/main.fd32a808.js.map",
+    "main.42ba3c16.js.map": "/conantconnect/home/static/js/main.42ba3c16.js.map",
     "787.2a1fce72.chunk.js.map": "/conantconnect/home/static/js/787.2a1fce72.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d0c3df2.css",
-    "static/js/main.fd32a808.js"
+    "static/js/main.42ba3c16.js"
   ]
 }
