@@ -22,21 +22,21 @@ function App() {
   return (
     <div className="App">
       <MyNav></MyNav>
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Entry/>}></Route>
                 <Route path='/login' element={<Login/>}></Route>
                 <Route path='/signup' element={<Signup/>}></Route>
                 <Route path='/forgot' element={<Forgot/>}></Route>
-                <Route path='/home' element={<Home/>}></Route>
                 <Route path='/profile' element={<Profile/>}></Route>
                 <Route path='/explore' element={<Explore/>}></Route>
                 <Route path='/mentor' element={<OneMentor/>}></Route>
                 <Route path='/student' element={<OneStudent/>}></Route>
+                <Route path='/home' element={<Home/>}></Route>
                 <Route path='/myMentors' element={<MyMentors/>}></Route>
                 <Route path='/myStudents' element={<MyStudents/>}></Route>
             </Routes>
-          {/* </BrowserRouter> */}
+          </BrowserRouter>
         <MyFooter></MyFooter>
     </div>
   );

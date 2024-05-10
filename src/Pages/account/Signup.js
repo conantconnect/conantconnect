@@ -132,7 +132,7 @@ export default function Signup() {
                     password: formData.password,
                     grade: formData.grade,
                     type: "student",
-                    complete: true
+                    complete: false
                 })
                 .then(function (response) {
                     // handle success
@@ -175,7 +175,7 @@ export default function Signup() {
         try {
             console.log(value)
             await localStorage.setItem("user", value);
-            if(isStudent){
+            if(!isStudent){
                 navigate("/home")
             }else{
                 navigate("/profile")

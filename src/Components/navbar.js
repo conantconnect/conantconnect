@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from "../Resources/images/logo.png"
+import { useNavigate } from 'react-router-dom';
 
 // stylesheet for navbar
 import './navbar.css'
@@ -11,10 +12,12 @@ import { useEffect, useRef, useState } from 'react';
 function MyNav() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isStudent, setIsStudent] = useState(false);
+    // const navigate = useNavigate();
 
     useEffect(() => {
       if(localStorage.getItem("user")){
         setIsLoggedIn(true)
+        // navigate("/conantconnect/home")
         if(JSON.parse(localStorage.getItem("user")).user_type=="student"){
           setIsStudent(true)
         }else{

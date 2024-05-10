@@ -60,6 +60,7 @@ export default function Profile() {
                 ["bio"]: thisUser.bio
         });
         if(!completedInterestAdding){
+            if(thisUser.interest.length>0){
             for (let index = 0; index < thisUser.interest.length; index++) {
                 if(thisUser.interest[index].value=="machine learning"){
                     setSelectedOptions(prevArray => [...prevArray, options[0]])
@@ -84,7 +85,7 @@ export default function Profile() {
                 }
                 if(thisUser.interest[index].value=="other"){
                     setSelectedOptions(prevArray => [...prevArray, options[7]])
-                }
+                }}
         }}
 
         completedInterestAdding = true
